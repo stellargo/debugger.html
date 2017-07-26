@@ -15,6 +15,7 @@
 * [Linting](#linting)
   * [Lint JS](#lint-js)
   * [Lint CSS](#lint-css)
+* [Shortcuts](#shortcuts)
 * [Colors](#colors)
 * [Configs](#configs)
 * [Workers](#workers)
@@ -417,6 +418,21 @@ The Debugger has a [styleguide][mdn-colors] that we use to keep the colors consi
 
 The common colors are represented as [css variables] in a [devtools variables][devtools-css-variables] file. This lets define the colors
 for each theme: [light][light-theme], [dark][dark-theme], [firebug][firebug-theme].
+
+### Shortcuts
+
+#### Adding a new shortcut
+
+* shortcuts are passed through context
+* we use the Shortcuts library (setup in app.js)
+
+there's an `on` and `off` method
+there is a funky DSL for cmd and shift
+shortcuts are often defined in properties for translations
+
+#### Seeing all the shortcuts defined
+
+`getGlobalsForTesting().shortcuts`
 
 #### Making a color change
 
